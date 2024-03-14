@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .center_div {
+        @apply flex items-center justify-center;
+    }
+    .input_box {
+        @apply w-[98%] h-[50px] border-2 border-gray-500 indent-2 rounded-lg;
+    }
+    .gradient {
+        @apply bg-gradient-to-r from-[#46c469] to-[#11b2cb];
+    }
+    .btn1 {
+        @apply input_box cursor-pointer gradient border-none text-white;
+    }
+    .gradient_text {
+        @apply bg-clip-text text-transparent gradient cursor-pointer font-bold;
+    }
+}
